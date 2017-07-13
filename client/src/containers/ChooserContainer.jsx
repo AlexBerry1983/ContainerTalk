@@ -11,7 +11,7 @@ class ChooserContainer extends React.Component {
     };
 
     this.socket = io();
-    this.socket.on("game", this.state.answer);
+    this.socket.on("game", ( answer ) => { this.setState( {answer: answer}) });
 
     this.submitForm = this.submitForm.bind(this);
     this.answerKeyUp = this.answerKeyUp.bind(this);

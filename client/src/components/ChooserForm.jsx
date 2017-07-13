@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ChooserForm = ({ onSubmit, answerKeyUp, msg }) => {
+const ChooserForm = ({ onSubmit, answerKeyUp }) => {
   return (
     <form onSubmit={onSubmit}>
       <input type="text" onKeyUp={answerKeyUp} placeholder="Yes or NO" />
